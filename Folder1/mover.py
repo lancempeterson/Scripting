@@ -5,8 +5,8 @@ import os
 
 print("File Mover 1.0 - Lance M. Peterson")
 
-src = "C:/Users/Lance.Peterson/Desktop/Smart_Goal_Stuff/Scripts/Folder1"
-dst = "C:/Users/Lance.Peterson/Desktop/Smart_Goal_Stuff/Scripts/Folder2"
+src = "C:/Users/Lance.Peterson/Desktop/Scripting/Folder1"
+dst = "C:/Users/Lance.Peterson/Desktop/Scripting/Folder2"
 
 EXTENSIONS = ('txt')
 
