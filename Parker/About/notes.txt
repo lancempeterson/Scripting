@@ -1,0 +1,39 @@
+Scripting for Parker {16 inch console}
+Lance M. Peterson
+
+----
+
+ADB Command Tap Position:
+
+adb shell input tap 0 0 (top left corner)
+
+adb shell input tap 1200 60 (available updates)
+
+adb shell input tap 20 200 (featured)
+
+adb shell input tap 20 300 (training app)
+
+adb shell input tap 20 400 (recent apps)
+
+adb shell input tap 20 500 (entertainment apps)
+
+adb shell input tap 20 650 (Run workout)
+
+adb shell input tap 1350 700 (pause workout)
+
+adb shell input tap 1350 650 (end workout)
+
+----
+
+Get List of current Running Services:
+
+adb shell service list > result.txt 2>&1
+
+----
+
+TODO/FUTURE UPDATES:
+Different Screen sizes
+
+
+
+
