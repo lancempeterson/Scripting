@@ -16,8 +16,8 @@ def main():
     img2 = to_grayscale(imread(file2).astype(float))
     # compare
     n_m, n_0 = compare_images(img1, img2)
-    print "Manhattan norm:", n_m, "/ per pixel:", n_m/img1.size
-    print "Zero norm:", n_0, "/ per pixel:", n_0*1.0/img1.size
+    print ("Manhattan norm:", n_m, "/ per pixel:", n_m/img1.size)
+    print ("Zero norm:", n_0, "/ per pixel:", n_0*1.0/img1.size)
 
 def compare_images(img1, img2):
     # normalize to compensate for exposure difference
@@ -38,6 +38,8 @@ def to_grayscale(arr):
 
 def normalize(arr):
     rng = arr.max()-arr.min()
+    if rng == 0:
+        rng = 1
     amin = arr.min()
     return (arr-amin)*255/rng
 

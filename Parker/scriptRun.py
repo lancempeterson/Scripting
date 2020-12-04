@@ -24,6 +24,7 @@ def start_batch():
 def check_services():
     subprocess.call([r'C:/Users/Lance.Peterson/Desktop/Scripting/Parker/BatchScripts/parkerCheckServices.bat'])
     shutil.move(src=src + "/ServicesResult.txt", dst=dst1)
+    #shutil.move(src=src + "/ProcressesResult.txt", dst=dst1)
 	
 def check_apps():
     subprocess.call([r'C:/Users/Lance.Peterson/Desktop/Scripting/Parker/BatchScripts/parkerCheckApps.bat'])

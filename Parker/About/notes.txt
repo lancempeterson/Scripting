@@ -2,6 +2,11 @@ Scripting for Parker {16 inch console}
 Lance M. Peterson
 
 ----
+Critical Functionality - Console Tests to check after update.
+Running a workout. Need to confirm a full workout (30+ seconds) is able to run.
+All apps are downloaded on console. Need to compare list of correct apps with current apps.
+All services are running on go screen. Need to compare list of correct services running with current services running.
+----
 
 ADB Command Tap Position:
 

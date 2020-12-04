@@ -1,140 +1,295 @@
-Found 139 services:
-0	secure_element: [android.se.omapi.ISecureElementService]
-1	carrier_config: [com.android.internal.telephony.ICarrierConfigLoader]
-2	phone: [com.android.internal.telephony.ITelephony]
-3	isms: [com.android.internal.telephony.ISms]
-4	iphonesubinfo: [com.android.internal.telephony.IPhoneSubInfo]
-5	simphonebook: [com.android.internal.telephony.IIccPhoneBook]
-6	telecom: [com.android.internal.telecom.ITelecomService]
-7	isub: [com.android.internal.telephony.ISub]
-8	contexthub: [android.hardware.location.IContextHubService]
-9	netd_listener: [android.net.metrics.INetdEventListener]
-10	connmetrics: [android.net.IIpConnectivityMetrics]
-11	bluetooth_manager: [android.bluetooth.IBluetoothManager]
-12	autofill: [android.view.autofill.IAutoFillManager]
-13	imms: [com.android.internal.telephony.IMms]
-14	statscompanion: [android.os.IStatsCompanionService]
-15	media.camera.proxy: [android.hardware.ICameraServiceProxy]
-16	slice: [android.app.slice.ISliceManager]
-17	media_projection: [android.media.projection.IMediaProjectionManager]
-18	crossprofileapps: [android.content.pm.ICrossProfileApps]
-19	launcherapps: [android.content.pm.ILauncherApps]
-20	shortcut: [android.content.pm.IShortcutService]
-21	media_router: [android.media.IMediaRouterService]
-22	media_resource_monitor: [android.media.IMediaResourceMonitor]
-23	media_session: [android.media.session.ISessionManager]
-24	restrictions: [android.content.IRestrictionsManager]
-25	companiondevice: [android.companion.ICompanionDeviceManager]
-26	print: [android.print.IPrintManager]
-27	graphicsstats: [android.view.IGraphicsStats]
-28	dreams: [android.service.dreams.IDreamManager]
-29	commontime_management: []
-30	network_time_update_service: []
-31	diskstats: []
-32	voiceinteraction: [com.android.internal.app.IVoiceInteractionManagerService]
-33	appwidget: [com.android.internal.appwidget.IAppWidgetService]
-34	backup: [android.app.backup.IBackupManager]
-35	trust: [android.app.trust.ITrustManager]
-36	soundtrigger: [com.android.internal.app.ISoundTriggerService]
-37	jobscheduler: [android.app.job.IJobScheduler]
-38	hardware_properties: [android.os.IHardwarePropertiesManager]
-39	serial: [android.hardware.ISerialManager]
-40	usb: [android.hardware.usb.IUsbManager]
-41	DockObserver: []
-42	audio: [android.media.IAudioService]
-43	wallpaper: [android.app.IWallpaperManager]
-44	search: [android.app.ISearchManager]
-45	country_detector: [android.location.ICountryDetector]
-46	location: [android.location.ILocationManager]
-47	devicestoragemonitor: []
-48	notification: [android.app.INotificationManager]
-49	drm_device_management: [android.os.IRkDisplayDeviceManagementService]
-50	updatelock: [android.os.IUpdateLock]
-51	system_update: [android.os.ISystemUpdateManager]
-52	servicediscovery: [android.net.nsd.INsdManager]
-53	connectivity: [android.net.IConnectivityManager]
-54	ethernet: [android.net.IEthernetManager]
-55	wifip2p: [android.net.wifi.p2p.IWifiP2pManager]
-56	wifiscanner: [android.net.wifi.IWifiScanner]
-57	wifi: [android.net.wifi.IWifiManager]
-58	netpolicy: [android.net.INetworkPolicyManager]
-59	netstats: [android.net.INetworkStatsService]
-60	network_score: [android.net.INetworkScoreService]
-61	textclassification: [android.service.textclassifier.ITextClassifierService]
-62	textservices: [com.android.internal.textservice.ITextServicesManager]
-63	ipsec: [android.net.IIpSecService]
-64	network_management: [android.os.INetworkManagementService]
-65	clipboard: [android.content.IClipboard]
-66	statusbar: [com.android.internal.statusbar.IStatusBarService]
-67	device_policy: [android.app.admin.IDevicePolicyManager]
-68	deviceidle: [android.os.IDeviceIdleController]
-69	lock_settings: [com.android.internal.widget.ILockSettings]
-70	uimode: [android.app.IUiModeManager]
-71	storagestats: [android.app.usage.IStorageStatsManager]
-72	mount: [android.os.storage.IStorageManager]
-73	accessibility: [android.view.accessibility.IAccessibilityManager]
-74	input_method: [com.android.internal.view.IInputMethodManager]
-75	pinner: []
-76	network_watchlist: [com.android.internal.net.INetworkWatchlistManager]
-77	overlay: [android.content.om.IOverlayManager]
-78	input: [android.hardware.input.IInputManager]
-79	window: [android.view.IWindowManager]
-80	alarm: [android.app.IAlarmManager]
-81	consumer_ir: [android.hardware.IConsumerIrService]
-82	vibrator: [android.os.IVibratorService]
-83	dropbox: [com.android.internal.os.IDropBoxManagerService]
-84	settings: []
-85	content: [android.content.IContentService]
-86	account: [android.accounts.IAccountManager]
-87	telephony.registry: [com.android.internal.telephony.ITelephonyRegistry]
-88	scheduling_policy: [android.os.ISchedulingPolicyService]
-89	sec_key_att_app_id_provider: [android.security.keymaster.IKeyAttestationApplicationIdProvider]
-90	binder_calls_stats: []
-91	webviewupdate: [android.webkit.IWebViewUpdateService]
-92	usagestats: [android.app.usage.IUsageStatsManager]
-93	batteryproperties: [android.os.IBatteryPropertiesRegistrar]
-94	battery: []
-95	sensorservice: [android.gui.SensorServer]
-96	media.sound_trigger_hw: [android.hardware.ISoundTriggerHwService]
-97	media.camera: [android.hardware.ICameraService]
-98	media.audio_policy: [android.media.IAudioPolicyService]
-99	processinfo: [android.os.IProcessInfoService]
-100	permission: [android.os.IPermissionController]
-101	cpuinfo: []
-102	dbinfo: []
-103	gfxinfo: []
-104	meminfo: []
-105	procstats: [com.android.internal.app.procstats.IProcessStats]
-106	activity: [android.app.IActivityManager]
-107	user: [android.os.IUserManager]
-108	otadexopt: [android.content.pm.IOtaDexopt]
-109	package_native: [android.content.pm.IPackageManagerNative]
-110	package: [android.content.pm.IPackageManager]
-111	display: [android.hardware.display.IDisplayManager]
-112	recovery: [android.os.IRecoverySystem]
-113	power: [android.os.IPowerManager]
-114	appops: [com.android.internal.app.IAppOpsService]
-115	batterystats: [com.android.internal.app.IBatteryStats]
-116	device_identifiers: [android.os.IDeviceIdentifiersPolicyService]
-117	media.extractor.update: [android.media.IMediaExtractorUpdateService]
-118	media.extractor: [android.media.IMediaExtractorService]
-119	media.resource_manager: [android.media.IResourceManagerService]
-120	media.player: [android.media.IMediaPlayerService]
-121	drm.drmManager: [drm.IDrmManagerService]
-122	netd: [android.net.INetd]
-123	android.security.keystore: [android.security.IKeystoreService]
-124	storaged_pri: [android.os.storaged.IStoragedPrivate]
-125	storaged: [android.os.IStoraged]
-126	android.service.gatekeeper.IGateKeeperService: [android.service.gatekeeper.IGateKeeperService]
-127	incident: [android.os.IIncidentManager]
-128	media.metrics: [android.media.IMediaAnalyticsService]
-129	media.drm: [android.media.IMediaDrmService]
-130	stats: [android.os.IStatsManager]
-131	wificond: [android.net.wifi.IWificond]
-132	perfprofd: [android.os.IPerfProfd]
-133	installd: [android.os.IInstalld]
-134	gpu: [android.ui.IGpuService]
-135	SurfaceFlinger: [android.ui.ISurfaceComposer]
-136	media.audio_flinger: [android.media.IAudioFlinger]
-137	thermalservice: [android.os.IThermalService]
-138	vold: [android.os.IVold]
+USER           PID  PPID     VSZ    RSS WCHAN            ADDR S NAME                       
+root             1     0   19624   3608 0                   0 S init
+root             2     0       0      0 0                   0 S [kthreadd]
+root             3     2       0      0 0                   0 S [ksoftirqd/0]
+root             5     2       0      0 0                   0 S [kworker/0:0H]
+root             6     2       0      0 0                   0 S [kworker/u12:0]
+root             7     2       0      0 0                   0 S [rcu_preempt]
+root             8     2       0      0 0                   0 S [rcu_sched]
+root             9     2       0      0 0                   0 S [rcu_bh]
+root            10     2       0      0 0                   0 S [migration/0]
+root            11     2       0      0 0                   0 S [watchdog/0]
+root            12     2       0      0 0                   0 S [watchdog/1]
+root            13     2       0      0 0                   0 S [migration/1]
+root            14     2       0      0 0                   0 S [ksoftirqd/1]
+root            16     2       0      0 0                   0 S [kworker/1:0H]
+root            17     2       0      0 0                   0 S [watchdog/2]
+root            18     2       0      0 0                   0 S [migration/2]
+root            19     2       0      0 0                   0 S [ksoftirqd/2]
+root            21     2       0      0 0                   0 S [kworker/2:0H]
+root            22     2       0      0 0                   0 S [watchdog/3]
+root            23     2       0      0 0                   0 S [migration/3]
+root            24     2       0      0 0                   0 S [ksoftirqd/3]
+root            25     2       0      0 0                   0 S [kworker/3:0]
+root            26     2       0      0 0                   0 S [kworker/3:0H]
+root            27     2       0      0 0                   0 S [watchdog/4]
+root            28     2       0      0 0                   0 S [migration/4]
+root            29     2       0      0 0                   0 S [ksoftirqd/4]
+root            31     2       0      0 0                   0 S [kworker/4:0H]
+root            32     2       0      0 0                   0 S [watchdog/5]
+root            33     2       0      0 0                   0 S [migration/5]
+root            34     2       0      0 0                   0 S [ksoftirqd/5]
+root            36     2       0      0 0                   0 S [kworker/5:0H]
+root            37     2       0      0 0                   0 S [kdevtmpfs]
+root            38     2       0      0 0                   0 S [netns]
+root            39     2       0      0 0                   0 S [perf]
+root            40     2       0      0 0                   0 S [kconsole]
+root            41     2       0      0 0                   0 S [khungtaskd]
+root            42     2       0      0 0                   0 S [writeback]
+root            43     2       0      0 0                   0 S [ksmd]
+root            44     2       0      0 0                   0 S [crypto]
+root            45     2       0      0 0                   0 S [bioset]
+root            46     2       0      0 0                   0 S [kblockd]
+root            48     2       0      0 0                   0 S [devfreq_wq]
+root            49     2       0      0 0                   0 S [irq/170-hr_hear]
+root            50     2       0      0 0                   0 S [irq/168-wl_hear]
+root            51     2       0      0 0                   0 S [irq/169-wl_hear]
+root            52     2       0      0 0                   0 S [irq/172-safe_lo]
+root            53     2       0      0 0                   0 S [cfg80211]
+root            54     2       0      0 0                   0 S [cfinteractive]
+root            55     2       0      0 0                   0 S [kworker/u12:1]
+root            72     2       0      0 0                   0 S [kswapd0]
+root            73     2       0      0 0                   0 S [vmstat]
+root            74     2       0      0 0                   0 S [fsnotify_mark]
+root            75     2       0      0 0                   0 S [kworker/u13:0]
+root            76     2       0      0 0                   0 S [cifsiod]
+root           110     2       0      0 0                   0 S [irq/230-rockchi]
+root           111     2       0      0 0                   0 S [irq/231-rockchi]
+root           112     2       0      0 0                   0 S [irq/232-rockchi]
+root           113     2       0      0 0                   0 S [irq/233-rockchi]
+root           114     2       0      0 0                   0 S [irq/234-rockchi]
+root           115     2       0      0 0                   0 S [irq/235-rockchi]
+root           116     2       0      0 0                   0 S [irq/49-ff670000]
+root           117     2       0      0 0                   0 S [kworker/4:1]
+root           118     2       0      0 0                   0 S [vcodec]
+root           119     2       0      0 0                   0 S [irq/45-ff650000]
+root           120     2       0      0 0                   0 S [irq/44-ff650000]
+root           121     2       0      0 0                   0 S [vcodec]
+root           122     2       0      0 0                   0 S [irq/47-ff660000]
+root           123     2       0      0 0                   0 S [bioset]
+root           124     2       0      0 0                   0 S [bioset]
+root           125     2       0      0 0                   0 S [bioset]
+root           126     2       0      0 0                   0 S [bioset]
+root           127     2       0      0 0                   0 S [bioset]
+root           128     2       0      0 0                   0 S [bioset]
+root           129     2       0      0 0                   0 S [bioset]
+root           130     2       0      0 0                   0 S [bioset]
+root           131     2       0      0 0                   0 S [bioset]
+root           132     2       0      0 0                   0 S [bioset]
+root           133     2       0      0 0                   0 S [bioset]
+root           134     2       0      0 0                   0 S [bioset]
+root           135     2       0      0 0                   0 S [bioset]
+root           136     2       0      0 0                   0 S [bioset]
+root           137     2       0      0 0                   0 S [bioset]
+root           138     2       0      0 0                   0 S [bioset]
+root           139     2       0      0 0                   0 S [bioset]
+root           140     2       0      0 0                   0 S [bioset]
+root           141     2       0      0 0                   0 S [bioset]
+root           142     2       0      0 0                   0 S [bioset]
+root           143     2       0      0 0                   0 S [bioset]
+root           144     2       0      0 0                   0 S [bioset]
+root           145     2       0      0 0                   0 S [bioset]
+root           146     2       0      0 0                   0 S [bioset]
+root           147     2       0      0 0                   0 S [bioset]
+root           148     2       0      0 0                   0 S [memory_wq]
+root           149     2       0      0 0                   0 S [nvme]
+root           150     2       0      0 0                   0 S [kworker/0:1]
+root           151     2       0      0 0                   0 S [kworker/2:1]
+root           152     2       0      0 0                   0 S [uether]
+root           153     2       0      0 0                   0 S [goodix_wq]
+root           154     2       0      0 0                   0 S [irq/121-rk808]
+root           156     2       0      0 0                   0 S [irq/40-rockchip]
+root           157     2       0      0 0                   0 S [dm_bufio_cache]
+root           158     2       0      0 0                   0 S [kworker/1:1]
+root           159     2       0      0 0                   0 S [kworker/4:2]
+root           160     2       0      0 0                   0 S [irq/26-mmc1]
+root           161     2       0      0 0                   0 S [kworker/2:2]
+root           162     2       0      0 0                   0 S [binder]
+root           165     2       0      0 0                   0 S [bioset]
+root           166     2       0      0 0                   0 S [mmcqd/1]
+root           167     2       0      0 0                   0 S [bioset]
+root           168     2       0      0 0                   0 S [mmcqd/1boot0]
+root           169     2       0      0 0                   0 S [bioset]
+root           170     2       0      0 0                   0 S [mmcqd/1boot1]
+root           171     2       0      0 0                   0 S [bioset]
+root           172     2       0      0 0                   0 S [mmcqd/1rpmb]
+root           173     2       0      0 0                   0 S [ipv6_addrconf]
+root           174     2       0      0 0                   0 S [krfcommd]
+root           185     2       0      0 0                   0 S [irq/50-rga]
+root           186     2       0      0 0                   0 S [deferwq]
+root           188     2       0      0 0                   0 S [kworker/1:2]
+root           189     2       0      0 0                   0 S [irq/62-analogix]
+root           190     2       0      0 0                   0 S [hpd_queue]
+root           191     2       0      0 0                   0 S [irq/61-ff940000]
+root           192     2       0      0 0                   0 S [cec-dw_hdmi]
+root           193     2       0      0 0                   0 S [irq/61-dw-hdmi-]
+root           194     2       0      0 0                   0 S [irq/171-fan_rpm]
+root           196     2       0      0 0                   0 S [kdmflush]
+root           197     2       0      0 0                   0 S [bioset]
+root           198     2       0      0 0                   0 S [kverityd]
+root           199     2       0      0 0                   0 S [bioset]
+root           200     2       0      0 0                   0 S [bioset]
+root           201     2       0      0 0                   0 S [bioset]
+root           202     2       0      0 0                   0 S [kworker/4:1H]
+root           203     2       0      0 0                   0 S [ext4-rsv-conver]
+root           206     2       0      0 0                   0 S [scsi_eh_0]
+root           207     2       0      0 0                   0 S [scsi_tmf_0]
+root           209     2       0      0 0                   0 S [usb-storage]
+root           210     2       0      0 0                   0 S [kdmflush]
+root           211     2       0      0 0                   0 S [bioset]
+root           212     2       0      0 0                   0 S [kverityd]
+root           213     2       0      0 0                   0 S [bioset]
+root           214     2       0      0 0                   0 S [bioset]
+root           215     2       0      0 0                   0 S [bioset]
+root           216     2       0      0 0                   0 S [ext4-rsv-conver]
+root           217     1    7048   2492 0                   0 S init
+root           218     1    6536   2044 0                   0 S init
+root           220     1    6664   2312 0                   0 S ueventd
+root           221     2       0      0 0                   0 S [bioset]
+root           222     2       0      0 0                   0 S [mmcqd/0]
+root           231     2       0      0 0                   0 S [gpu_power_off_w]
+root           232     2       0      0 0                   0 S [kworker/u13:1]
+root           233     2       0      0 0                   0 S [kbase_job_fault]
+root           240     2       0      0 0                   0 S [ext4-rsv-conver]
+root           244     2       0      0 0                   0 S [bioset]
+root           246     2       0      0 0                   0 S [jbd2/mmcblk1p13]
+root           247     2       0      0 0                   0 S [ext4-rsv-conver]
+root           249     2       0      0 0                   0 S [jbd2/mmcblk1p15]
+root           250     2       0      0 0                   0 S [ext4-rsv-conver]
+logd           253     1   22384   5388 0                   0 S logd
+system         254     1   11564   3820 0                   0 S servicemanager
+system         255     1 2127168   6588 0                   0 S hwservicemanager
+system         256     1   12276   3112 0                   0 S vndservicemanager
+root           258     1   10688   3780 0                   0 S tee-supplicant
+root           262     2       0      0 0                   0 S [kauditd]
+system         263     1 2126892   6720 0                   0 S android.hardware.keymaster@3.0-service
+root           264     1   63124   8284 0                   0 S vold
+system         275     1   12832   4104 0                   0 S android.hidl.allocator@1.0-service
+root           276     1   13196   4300 0                   0 S healthd
+audioserver    277     1   23380   9908 0                   0 S android.hardware.audio@2.0-service
+bluetooth      278     1   20012   4992 0                   0 S android.hardware.bluetooth@1.0-service
+cameraserver   279     1   15752   6924 0                   0 S android.hardware.camera.provider@2.4-external-service
+cameraserver   280     1   24604  12140 0                   0 S android.hardware.camera.provider@2.4-service
+media          281     1   10232   4868 0                   0 S android.hardware.cas@1.0-service
+system         282     1   17688   4956 0                   0 S android.hardware.configstore@1.1-service
+media          283     1   14676   6964 0                   0 S android.hardware.drm@1.0-service
+media          284     1   19592   6720 0                   0 S android.hardware.drm@1.1-service.clearkey
+root           285     2       0      0 0                   0 S [kworker/u12:5]
+media          286     1   13960   6336 0                   0 S android.hardware.drm@1.1-service.widevine
+system         287     1   16176   5216 0                   0 S android.hardware.gatekeeper@1.0-service
+system         288     1   26988   7712 0                   0 S android.hardware.graphics.allocator@2.0-service
+system         289     1   44216  10984 0                   0 S android.hardware.graphics.composer@2.1-service
+system         290     1   14196   4908 0                   0 S android.hardware.health@2.0-service
+system         291     1   14228   4948 0                   0 S android.hardware.light@2.0-service
+system         294     1   14228   4768 0                   0 S android.hardware.power@1.0-service
+system         295     1   17540   4848 0                   0 S android.hardware.sensors@1.0-service
+wifi           296     1   20604   7420 0                   0 S android.hardware.wifi@1.0-service
+audioserver    297     1  111780  17760 0                   0 S audioserver
+root           298     1   10204   2460 0                   0 S lmkd
+system         299     1 2387288  37716 0                   0 S surfaceflinger
+system         300     1   17232   4764 0                   0 S thermalserviced
+root           301     2       0      0 0                   0 S [f_mtp]
+shell          303     1    9280   2420 wait_woken 758bd32190 S sh
+root           329     2       0      0 0                   0 S [kbase_event]
+root           364     2       0      0 0                   0 S [kworker/5:1H]
+root           381     2       0      0 0                   0 S [kdmflush]
+root           389     2       0      0 0                   0 S [bioset]
+root           390     2       0      0 0                   0 S [kcryptd_io]
+root           391     2       0      0 0                   0 S [kcryptd]
+root           392     2       0      0 0                   0 S [dmcrypt_write]
+root           393     2       0      0 0                   0 S [bioset]
+root           399     2       0      0 0                   0 S [f2fs_flush-252:]
+root           400     2       0      0 0                   0 S [f2fs_discard-25]
+root           401     2       0      0 0                   0 S [f2fs_gc-252:2]
+root           408     1    9156   2812 0                   0 S su
+root           410     1 4316556 144124 0                   0 S zygote64
+root           411     1 1634436 129356 0                   0 S zygote
+cameraserver   412     1   27832  11004 0                   0 S cameraserver
+drm            413     1   20792   9660 0                   0 S drmserver
+incidentd      415     1   20472   5108 0                   0 S incidentd
+root           416     1   23028   5640 0                   0 S installd
+keystore       419     1 2134564   8320 0                   0 S keystore
+media          420     1   11372   5596 0                   0 S mediadrmserver
+mediaex        421     1 2179340  17932 0                   0 S media.extractor
+media          422     1 2143928  11392 0                   0 S media.metrics
+media          423     1  105616  18468 0                   0 S mediaserver
+root           424     1 2144964   8020 0                   0 S netd
+statsd         425     1   23764   6536 0                   0 S statsd
+root           426     1   23160   5752 0                   0 S storaged
+wifi           427     1   19192   6388 0                   0 S wificond
+mediacodec     431     1   41420  14552 0                   0 S media.codec
+system         435     1 2129504   7164 0                   0 S gatekeeperd
+root           437     1   19464   4824 0                   0 S perfprofd
+tombstoned     438     1    9636   2348 0                   0 S tombstoned
+root           454   424    9796   3276 0                   0 S iptables-restore
+root           455   424    9812   3576 0                   0 S ip6tables-restore
+system         515   410 4612056 240904 0                   0 S system_server
+bluetooth      636   410 3792900 119428 0                   0 S com.android.bluetooth
+u0_a59         655   410 3753532 102136 0                   0 S com.android.inputmethod.latin
+root           669     2       0      0 0                   0 S [kworker/1:1H]
+u0_a15         671   410 4178780 228280 0                   0 S com.android.systemui
+webview_zygote 696   411 1636532  56972 0                   0 S webview_zygote
+root           776     2       0      0 0                   0 S [kworker/0:1H]
+radio          807   410 3769380 112360 0                   0 S com.android.phone
+u0_a24         929   410 3739228  89100 0                   0 S android.ext.services
+root           936     2       0      0 0                   0 S [wl_escan_handle]
+root           937     2       0      0 0                   0 S [dhd_watchdog_th]
+root           939     2       0      0 0                   0 S [dhd_dpc]
+root           940     2       0      0 0                   0 S [dhd_rxf]
+wifi           952     1 2129956  10640 0                   0 S wpa_supplicant
+root           986     2       0      0 0                   0 S [kbase_event]
+root           999     2       0      0 0                   0 S [kworker/3:1H]
+root          1002     2       0      0 0                   0 S [kworker/2:1H]
+root          1057     2       0      0 0                   0 S [ksdioirqd/mmc2]
+root          1059     2       0      0 0                   0 S [dhd_eventd]
+u0_a49        1093   410 3746064  89688 0                   0 S com.android.deskclock
+shell         1126     1   20588   2056 0                   0 R adbd
+root          1128     2       0      0 0                   0 S [irq/236-dwc3]
+secure_element 1138  410 3737996  78484 0                   0 S com.android.se
+system        1154   410 3736648  84444 0                   0 S com.cghs.stresstest
+system        1185   410 3742288  87512 0                   0 S android.rockchip.update.service
+u0_a94        1202   410 4444132 126156 0                   0 S com.jhtp.loggerservice
+shell         1204  1126   10168   2728 __skb_recv_datagram 7b39f721f0 S logcat
+u0_a54        1212   410 3735648  77960 0                   0 S com.android.smspush
+u0_a94        1235   410 4756400 155640 0                   0 S com.jht.splashapp
+u0_a13        1244   410 3763716 105768 0                   0 S com.android.launcher3
+u0_a5         1315   410 3764004 109152 0                   0 S android.process.media
+u0_a94        1508   410 4446144 109988 0                   0 S com.jhtp.datamatrixservice
+u0_a94        1802   410 4442084 125812 0                   0 S com.jhtp.sso
+u0_a94        1810   410 4438444 108548 0                   0 S com.jhtp.workoutsaver
+u0_a94        1820   410 4440028 114148 0                   0 S com.jhtp.ioservice
+u0_a94        1845   410 4448008 120180 0                   0 S com.jhtp.lcbservice
+u0_a94        1863   410 4495496 119744 0                   0 S com.jhtp.halservice
+u0_a94        1886   410 4442384 115996 0                   0 S com.jhtp.virtualactiveservice
+u0_a94        1904   410 4438572 109156 0                   0 S com.jhtp.workoutcontrollerservice
+root          1917     2       0      0 0                   0 S [kbase_event]
+u0_a94        1946   410 4482112 148696 0                   0 S com.jhtp.uiservice
+u0_a94        1975   410 4442940 122000 0                   0 S com.jhtp.dapiservice
+u0_a94        1986   410 4441164 106988 0                   0 S com.jhtp.systemsettingsservice
+u0_a94        1997   410 3749984 101084 0                   0 S com.jhtp.updateservice
+u0_a94        2016   410 4452276 116000 0                   0 S com.jhtp.usbmediaservice
+u0_a94        2039   410 4439452 108676 0                   0 S com.jhtp.location
+u0_a94        2049   410 4439668 113580 0                   0 S com.jhtp.gattserver
+u0_a94        2058   410 4441092 111248 0                   0 S com.jhtp.matrixcommserver
+u0_a94        2079   410 4436652 108328 0                   0 S com.jhtp.workouttrackingservice
+u0_a18        2103   410 3738488  88724 0                   0 S com.android.providers.calendar
+u0_a45        2404   410 3746684  87720 0                   0 S com.android.calendar
+u0_a37        2507   410 3748472  93412 0                   0 S com.android.email
+root          3146     2       0      0 0                   0 S [kbase_event]
+u0_a94        3390   410 4857552 213460 0                   0 S com.jht.mainapp
+root          3571     2       0      0 0                   0 S [kbase_event]
+u0_a25        3585   410 3740808  89620 0                   0 S com.android.documentsui
+u0_a22        3630   410 3736768  82156 0                   0 S com.android.externalstorage
+u0_a5         3680   410 3736844  83972 0                   0 S com.android.mtp
+shell         3698   410 3737480  80608 0                   0 S com.android.shell
+root          4226     2       0      0 0                   0 S [kworker/5:0]
+root          4231     2       0      0 0                   0 S [kworker/u13:5]
+root          4236     2       0      0 0                   0 S [kworker/5:1]
+root          4239     2       0      0 0                   0 S [kworker/u13:6]
+root          4240     2       0      0 0                   0 S [kworker/3:2]
+root          4242     2       0      0 0                   0 S [kworker/u13:4]
+root          4258     2       0      0 0                   0 S [kworker/u13:2]
+root          4259     2       0      0 0                   0 S [kworker/0:2]
+root          4271     2       0      0 0                   0 S [kworker/u13:3]
+root          4272     2       0      0 0                   0 S [kworker/0:0]
+shell         4273  1126   11748   3096 0          7791133190 R ps
